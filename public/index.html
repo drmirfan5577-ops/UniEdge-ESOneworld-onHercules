@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UniEdge ESOneworld</title>
+  <meta name="description" content="Watch, share and discover videos" />
+  <meta name="theme-color" content="#d62828" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="icon" href="/icon/icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/icon/icon.svg" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/"><img src="/icon/icon.svg" alt="" width="32" height="32" /><span>UniEdge <b>ESOneworld</b></span></a>
+    <input id="search" type="search" placeholder="Search videos" aria-label="Search videos" />
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Watch, share and discover videos</h1>
+      <p>Your gateway to the ESOneworld community.</p>
+    </section>
+
+    <nav class="chips" id="chips" aria-label="Categories"></nav>
+    <section class="grid" id="grid" aria-live="polite"></section>
+    <p class="empty" id="empty" hidden>No videos match your search.</p>
+  </main>
+
+  <div class="toast" id="toast" hidden>
+    <span>A new version is available!</span>
+    <button id="refresh">Refresh</button>
+  </div>
+
+  <footer>© <span id="year"></span> UniEdge ESOneworld</footer>
+  <script src="/app.js" defer></script>
+</body>
+</html>
